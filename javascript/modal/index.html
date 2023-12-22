@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- part invisible at first -->
+    <div class="modal-container">
+        <!-- overlay /!\ div closed at the same line -->
+            <div class="overlay modal-trigger"></div>
+            <!-- modal content, role & aria for accessibility -->
+            <div class="modal" 
+            role="dialog"
+            aria-labelledby="dialog1Title"
+            aria-describedby="dialog1Desc">
+                <!-- close button -->
+                <button class="close-modal modal-trigger">
+                    x
+                </button>
+                <h1 id="dialog1Title">Some content</h1>
+                <p id="dialog1Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, soluta maxime. Explicabo porro ducimus in.</p>
+        </div>
+    </div>
+    <!-- we can trigger with Open button, with Close button and with Overlay -->
+    <button class="modal-btn modal-trigger">
+        Open
+    </button>
+    <script src="app.js"></script>
+</body>
+</html>
