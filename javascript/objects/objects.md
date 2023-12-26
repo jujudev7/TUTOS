@@ -5,7 +5,7 @@ Un Object (objet, en français) JavaScript est un **conteneur**. Il est composé
 Pour déclarer un objet en JavaScript, vous devez utiliser les **accolades  { }**. Les propriétés d’un objet ont un nom et une valeur qui sont assignées avec **deux points :**. Les propriétés sont séparées entre elles par des **virgules ,** .
 
 Par exemple, pour déclarer l’objet monPersonnage qui représente le personnage fictif Bruce Wayne, 35 ans, dont la couleur préférée est le noir et qui adore sortir la nuit, vous écrirez :
-
+```
 let monPersonnage = {   
 nom: "Wayne",  
 prenom: "Bruce",  
@@ -13,7 +13,7 @@ age: 35,
 couleurPreferee: "noir",  
 hobbies: "sortir la nuit"  
 }   
-
+```
 ## Ajoutez une propriété à un objet JavaScript
 Un objet JavaScript peut être mis à jour au fur et à mesure de son évolution dans le code.
 Par exemple, si vous vous rendez compte que l’objet monPersonnage a désormais un véhicule préféré, il vous faudra lui ajouter cette nouvelle propriété.
@@ -33,6 +33,6 @@ console.log(nomDeMonPersonnage)
 console.log(monPersonnage.nom)  
 → Wayne / Wayne
 
-    • Un objet en JavaScript peut posséder plusieurs propriétés qui auront pour chacune d’elles une valeur.
-    • Pour déclarer un objet en JavaScript, vous devez utiliser les accolades  { }  .
-    • Pour ajouter ou récupérer une propriété, vous devez utiliser le point  .  .
+    • Un objet en JavaScript peut posséder plusieurs propriétés qui auront pour chacune d’elles une valeur
+    • Pour déclarer un objet en JavaScript, vous devez utiliser les accolades  { }  
+    • Pour ajouter ou récupérer une propriété, vous devez utiliser le point .  
