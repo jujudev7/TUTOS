@@ -27,7 +27,7 @@ Syntaxe d’une condition en JavaScript :
     // Code exécuté si la condition est fausse  
 }
 
-Ce morceau de code signifie : Si (if, en angais) la condition est vraie, alors j’exécute le premier bloc de code, sinon (else, en anglais) j’exécute le second.
+Ce morceau de code signifie : Si (if, en anglais) la condition est vraie, alors j’exécute le premier bloc de code, sinon (else, en anglais) j’exécute le second.
 
 La condition utilisée peut être un **booléen**(valant true ou false), ou une comparaison (exemple : variable === 42).
 
