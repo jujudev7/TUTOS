@@ -62,5 +62,7 @@ while (i < 3) {
 
 ## En résumé
     • Une boucle est une structure conditionnelle qui permet de répéter du code plusieurs fois.
+
     • La boucle for permet de répéter du code pour un nombre défini de fois.
+    
     • La boucle while permet de répéter du code jusqu’à ce qu’une condition ne soit plus remplie.

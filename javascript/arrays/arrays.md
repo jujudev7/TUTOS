@@ -120,7 +120,11 @@ C’est également pour cette raison que les tableaux sont souvent déclarés av
 
 ## En résumé
     • Un tableau est un conteneur qui permet de regrouper plusieurs valeurs ou variables.
+
     • Un tableau possède une propriété length qui permet de connaître le nombre de données contenues dans un tableau.
+
     • Une méthode s’utilise avec des parenthèses  ( )  , et permet d’interagir avec le contenu du tableau. Il existe de nombreuses méthodes différentes mises à disposition par le langage.
+
     • Lorsqu’on copie une variable simple, JavaScript réalise une copie par valeur (la valeur est dupliquée).
+    
     • Lorsqu’on copie une variable complexe, JavaScript réalise une copie par référence (les deux variables pointent sur la même valeur).

@@ -131,6 +131,9 @@ Dans notre exemple, si l’utilisateur à écrit “Mécréant” et qu’il n�
 
 ## En résumé
     • Une condition est un type de structure conditionnelle qui contient un test dont le résultat sera vrai ou faux.
+
     • Les conditions if / else permettent d’exécuter du code selon une réponse unique à un test.
+
     • Les conditions switch permettent d’exécuter du code si notre test peut avoir plusieurs réponses.
+    
     • Vous pouvez utiliser des booléens pour les tests de vos conditions, ou des opérateurs de comparaison, en fonction de ce que vous souhaitez tester.

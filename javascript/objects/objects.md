@@ -34,5 +34,7 @@ console.log(monPersonnage.nom)
 → Wayne / Wayne
 
     • Un objet en JavaScript peut posséder plusieurs propriétés qui auront pour chacune d’elles une valeur
-    • Pour déclarer un objet en JavaScript, vous devez utiliser les accolades  { }  
+
+    • Pour déclarer un objet en JavaScript, vous devez utiliser les accolades  { }
+      
     • Pour ajouter ou récupérer une propriété, vous devez utiliser le point .  
