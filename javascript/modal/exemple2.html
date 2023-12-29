@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Réservation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="exemple2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+       <main>
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-headline">
+            Close Modal
+          </h1>
+          <button class="btn-signup modal-btn">Inscription</button>
+        </div>
+
+      <div class="bground">
+        <div class="content">
+          <span class="close"></span>
+          <div class="modal-body">
+            <form
+              name="registration"
+              action="exemple2.html"
+              method="get"
+              onsubmit="return validate();"
+            >
+              <div class="formData">
+                <label for="firstname">Prénom</label><br />
+                <input
+                  class="text-control"
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  minlength="2"
+                /><br />
+              </div>
+              <div class="formData">
+                <label for="email">E-mail</label><br />
+                <input
+                  class="text-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                /><br />
+              </div>
+            <div class="formData">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  id="checkbox1"
+                />
+                <label class="checkbox2-label" for="checkbox1" required>
+                  <span class="checkbox-icon"></span>
+                  J'ai lu et j'accepte les conditions d'utilisation.
+                </label>
+                <br />
+                <input class="checkbox-input" type="checkbox" id="checkbox2" />
+                <label class="checkbox2-label" for="checkbox2">
+                  <span class="checkbox-icon"></span>
+                  Je souhaite être prévenu des prochains évènements.
+                </label>
+                <br />
+              </div>
+              <input
+                class="button btn-submit"
+                type="submit"
+                value="C'est parti"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="exemple2.js"></script>
+  </body>
+</html>
