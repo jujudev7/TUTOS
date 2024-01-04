@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <script src="checkbox-btnRadio.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <!-- champ nom avec input text -->
+      <label for="nom">Nom: </label>
+      <input type="text" id="nom" name="nom" value="David" />
+
+      <!-- champ conditions avec checkbox -->
+      <label for="conditions">Acceptez vous les conditions : </label>
+      <input type="checkbox" id="conditions" name="conditions" checked />
+
+      <!-- champ residence avec boutons radio: France, UE, hors UE -->
+      <div class="residence">
+        Résidence
+
+        <input
+          type="radio"
+          id="france"
+          name="residence"
+          value="France"
+          checked
+        />
+        <label for="france">France</label>
+        <input type="radio" id="eu" name="residence" value="Europe" />
+        <label for="eu">Europe</label>
+        <input type="radio" id="hors-eu" name="residence" value="Hors Europe" />
+        <label for="hors-eu">Hors Europe</label>
+      </div>
+    </form>
+  </body>
+</html>
