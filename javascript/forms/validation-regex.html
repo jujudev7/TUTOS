@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation form avec regex</title>
+    <script src="validation-regex.js" defer></script>
+    <style>
+      .error {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>Visiter ces 2 sites :</p>
+      <a href="https://regex101.com/">https://regex101.com/</a>
+      <br />
+      <br />
+      <a href="https://regexper.com/">https://regexper.com/</a>
+      <br />
+      <br />
+
+      <!-- champ nom -->
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+
+      <!-- champ email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" />
+
+      <!-- bouton de validation -->
+      <button>Envoyer</button>
+    </form>
+  </body>
+</html>
