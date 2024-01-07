@@ -36,9 +36,9 @@ champEmail.addEventListener("change", () => {
 // https://regex101.com/
 // https://regexper.com/
 
-// Pour tester des adresses email 
-// david@openclassrooms.com 
-// david.pierru@openclassrooms.com
-// david-pierru@open-classrooms.com
-// david.openclassrooms.com 
-// david@openclassrooms 
+/* Pour tester des adresses email 
+david@openclassrooms.com 
+david.pierru@openclassrooms.com
+david-pierru@open-classrooms.com
+david.openclassrooms.com 
+david@openclassrooms */

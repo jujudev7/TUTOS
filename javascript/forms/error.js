@@ -12,3 +12,4 @@ try {
     // console.log("il y a une erreur")
     console.log(erreur)
 }
+
