@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message d'erreur dans form</title>
+    <!-- Inclusion du fichier css pour le style du jeu -->
+    <link rel="stylesheet" href="error2.css" />
+
+    <!-- Inclusion des 3 scripts nécessaires pour faire fonctionner le jeu -->
+    <!-- Attention, l'ordre des fichiers js est important.  -->
+    <script src="error2.js" defer></script>
+    <!-- <script src="scripts/config.js" defer></script>
+  <script src="scripts/popup.js" defer></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/main.js" defer></script> -->
+  </head>
+
+  <body>
+
+    <main>
+      <div class="zonePartage">
+        <button>Partager</button>
+      </div>
+    </main>
+    <!-- Popup de partage -->
+    <div class="popupBackground">
+      <div class="popup">
+        <div>Partagez votre score</div>
+        <form novalidate>
+          <label for="nom">Votre nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+          <label for="email">Avec qui voulez-vous partager votre score ?</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nom@domaine.com"
+          />
+          <button id="btnEnvoyerMail">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
