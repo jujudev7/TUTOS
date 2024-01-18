@@ -38,7 +38,6 @@ form.addEventListener("submit", (event) => {
 });
 
 function validate() {
-
   let isValid = true;
 
   // Validation de la date de naissance
@@ -48,44 +47,32 @@ function validate() {
   const inputBirthdate = document.getElementById("birthdate");
 
   const errorBirthdate = document.getElementById("error-birthdate");
+  const birthdateUser = new Date(birthdate);
+  // console.log("birthdate = " + birthdateUser);
+  const age = calculateAge(birthdateUser);
 
-  // Vérifier si une date a été saisie
-  if (birthdate) {
-    // Créer un objet Date à partir de la chaîne de date saisie
-    const birthdateUser = new Date(birthdate);
-    console.log("birthdate = " + birthdateUser);
-    // Vérifier si la date est valide
-    if (!isNaN(birthdateUser.getTime())) {
-      // Calculer l'âge de l'utilisateur
-      const age = calculateAge(birthdateUser);
-      if (birthdateUser < new Date("1900-01-01")) {
-        //  alert("Veuillez entrer votre date de naissance svp");
-        errorBirthdate.textContent = "Veuillez entrer une date de naissance valide svp";
-        inputBirthdate.classList.add("invalid");
-        inputBirthdate.classList.remove("valid");
-        isValid = false;
-      }
-      // Vérifier si l'utilisateur a plus de 18 ans
-      else if (age >= 13 ) {
-        //  alert("Vous avez plus de 13 ans.");
-        inputBirthdate.classList.add("valid");
-        errorBirthdate.textContent = "";
-      } else {
-        //  alert("Désolé, vous n'avez pas l'âge requis pour participer");
-        errorBirthdate.textContent =
-          "Désolé, vous n'avez pas l'âge requis pour participer !";
-        inputBirthdate.classList.add("invalid");
-        inputBirthdate.classList.remove("valid");
-        isValid = false;
-      }
-    } 
-  } else {
-    //  alert("Veuillez entrer votre date de naissance svp");
+  if (birthdate == "") {
     errorBirthdate.textContent = "Veuillez entrer votre date de naissance svp";
     inputBirthdate.classList.add("invalid");
     inputBirthdate.classList.remove("valid");
     isValid = false;
-  }
+  } else if (birthdateUser >= new Date("1900-01-01") && age >= 13) {
+    errorBirthdate.textContent = "";
+    inputBirthdate.classList.add("valid");
+    inputBirthdate.classList.remove("invalid");
+  } else if (birthdateUser < new Date("1900-01-01")) {
+    errorBirthdate.textContent =
+      "Veuillez entrer une date de naissance valide svp";
+    inputBirthdate.classList.add("invalid");
+    inputBirthdate.classList.remove("valid");
+    isValid = false;
+  } else if (age < 13) {
+    errorBirthdate.textContent =
+      "Désolé, vous n'avez pas l'âge requis pour participer !";
+    inputBirthdate.classList.add("invalid");
+    inputBirthdate.classList.remove("valid");
+    isValid = false;
+  } 
 
   function calculateAge(birthdateUser) {
     const currentDate = new Date();
