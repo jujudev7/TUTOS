@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "Marcus Thuram",
+			"id": 1,
+			"club": "Inter Milan",
+			"image": "marcus-thuram.jpg"
+		},
+        {
+			"name": "Harry Kane",
+			"id": 2,
+			"club": "Bayern Munich",
+			"image": "harry-kane.jpg"
+		},
+        {
+			"name": "Bradley Barcola",
+			"id": 3,
+			"club": "Paris Saint-Germain",
+			"image": "bradley-barcola.jpg"
+		},
+        {
+			"name": "Victor Boniface",
+			"id": 4,
+			"club": "Bayer Leverkusen",
+			"image": "victor-boniface.jpg"
+		},
+        {
+			"name": "Cole Palmer",
+			"id": 5,
+			"club": "Chelsea",
+			"image": "cole-palmer.jpg"
+		},
+        {
+			"name": "Jude Bellingham",
+			"id": 6,
+			"club": "Real Madrid",
+			"image": "jude-bellingham.jpg"
+		}
+    ]
+}
