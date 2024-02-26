@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dropdown-menu.css" />
+    <title>Dropdown Menu</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button onclick="toggleOptions()" class="dropbtn first-option">Popularité</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#" onclick="selectOption(0)">Date</a>
+        <a href="#" onclick="selectOption(1)">Titre</a>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/54c01b8a7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dropdown-menu.js"></script>
+  </body>
+</html>
